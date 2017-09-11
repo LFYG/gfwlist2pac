@@ -28,7 +28,7 @@ Command line help:
 Further explanation for the arguments:  
 
 `-a` : the default is 127.0.0.1, if you want to share your proxy, use 0.0.0.0.  
-`-p` : no default, but it's usally 1080 for SS.  
-`-s` : use my own implementation of [shExpMatch](https://gist.github.com/meoow/e74946245a74116a0d0a01e98dcba962) function for wildcard matching, in case the target application doesn't have a built-in one which actually happens sometime.  
+`-p` : no default, but it's usually 1080 for SS.  
+`-s` : use my own implementation of [shExpMatch](https://gist.github.com/meoow/e74946245a74116a0d0a01e98dcba962) function for wildcard matching, in case the target application doesn't have a built-in one which actually happens sometimes.  
 `USERFILE` : user can privode file with extra url list in the same syntax of gfwlist.  
 
