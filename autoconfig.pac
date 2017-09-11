@@ -70,11 +70,19 @@ function shExpMatch(url, pat) {
 
 function FindProxyForURL(url, host) {
 
+	if (isPlainHostName(host)) {
+		return "DIRECT"; // Query for NetBIOS names
+	}
+
 	host = host.toLowerCase();
+
+	if (host.endsWith(".cn")) {
+		return "DIRECT"; // Obviously .cn will never be blocked
+	}
 
 	if (/^\d+\.\d+\.\d+\.\d+$/g.test(host)||
 		host === 'localhost') {
-		return "DIRECT";
+		return "DIRECT"; // No proxy for IP addresses and localhost.
 	}
 
 	var xs = host.split('.');
