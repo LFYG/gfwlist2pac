@@ -1,12 +1,5 @@
 #!/usr/bin/env python2.7
 
-# This script simply produces a working pac file,
-# no fancy input arguments support yet.
-# If someone is really interested in using this script,
-# download the gfwlist.txt, decode it through base64, name it as "gfwlist_decoded.txt"
-# and put it in the same direcotry with this script
-# run the script in terminal.
-
 import re
 import urlparse
 import argparse
