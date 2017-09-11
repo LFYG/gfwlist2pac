@@ -1,29 +1,29 @@
 # A Python script for converting gfwlist to autoconfig pac file
 
 Command line help:  
-
-> usage: gfwlist2pac.py [-h] [-t {PROXY,SOCKS5,SOCKS4,SOCKS}] [-a ADDR] -p PORT
->                       [-g] [-s] [-o OUTPUT]
->                       [USERFILE [USERFILE ...]]
-> 
-> positional arguments:
->   USERFILE              user provided gfwlist compatible file(s)
-> 
-> optional arguments:
->   -h, --help            show this help message and exit
->   -t {PROXY,SOCKS5,SOCKS4,SOCKS}, --proxy-type {PROXY,SOCKS5,SOCKS4,SOCKS}
->                         proxy server type, use PROXY(http) or SOCKS5 (default:
->                         SOCKS5)
->   -a ADDR, --proxy-addr ADDR
->                         proxy server address (default: 127.0.0.1)
->   -p PORT, --proxy-port PORT
->                         proxy server listening port
->   -g, --fetch-gfwlist   fetch gfwlist from https://raw.githubusercontent.com/
->                         gfwlist/gfwlist/master/gfwlist.txt
->   -s, --shexpmatch      use own shExpMatch, instead of depending on the host
->                         implementation
->   -o OUTPUT, --output OUTPUT
->                         output file (default: autoconfig.pac)
+  
+> usage: gfwlist2pac.py [-h] [-t {PROXY,SOCKS5,SOCKS4,SOCKS}] [-a ADDR] -p PORT  
+>                       [-g] [-s] [-o OUTPUT]  
+>                       [USERFILE [USERFILE ...]]  
+>   
+> positional arguments:  
+>   USERFILE              user provided gfwlist compatible file(s)  
+>   
+> optional arguments:  
+>   -h, --help            show this help message and exit  
+>   -t {PROXY,SOCKS5,SOCKS4,SOCKS}, --proxy-type {PROXY,SOCKS5,SOCKS4,SOCKS}  
+>                         proxy server type, use PROXY(http) or SOCKS5 (default:  
+>                         SOCKS5)  
+>   -a ADDR, --proxy-addr ADDR  
+>                         proxy server address (default: 127.0.0.1)  
+>   -p PORT, --proxy-port PORT  
+>                         proxy server listening port  
+>   -g, --fetch-gfwlist   fetch gfwlist from https://raw.githubusercontent.com/  
+>                         gfwlist/gfwlist/master/gfwlist.txt  
+>   -s, --shexpmatch      use own shExpMatch, instead of depending on the host  
+>                         implementation  
+>   -o OUTPUT, --output OUTPUT  
+>                         output file (default: autoconfig.pac)  
 
 Further explanation for the arguments:  
 
